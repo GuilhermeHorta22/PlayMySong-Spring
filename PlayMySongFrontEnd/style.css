@@ -1,79 +1,83 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f0f4f8;
-    padding: 30px;
-    margin: 0;
-    color: #333;
-  }
-  
-  h1 {
-    text-align: center;
-    color: #2f855a;
-    font-size: 2em;
-    margin-bottom: 30px;
-  }
-  
-  form, section {
-    background: #fff;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  form:hover, section:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-  }
-  
-  input, select, button {
-    display: block;
-    width: 100%;
-    margin: 15px 0;
-    padding: 12px 15px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    font-size: 1em;
-    transition: border-color 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  input:focus, select:focus {
-    border-color: #4CAF50;
-    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
-    outline: none;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    border: none;
-  }
-  
-  button:hover {
-    background-color: #43a047;
-  }
-  
-  .music-card {
-    background: #e8f5e9;
-    padding: 15px 20px;
-    margin-top: 15px;
-    border-left: 6px solid #43a047;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  .music-card strong {
-    font-size: 1.1em;
-    color: #2e7d32;
-  }
-  
-  audio {
-    width: 100%;
-    margin-top: 10px;
-    border-radius: 8px;
-  }
-  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  padding: 30px;
+  margin: 0;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2f855a;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+form,
+section {
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+form:hover,
+section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select,
+button {
+  display: block;
+  width: 100%;
+  margin: 15px 0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+
+button:hover {
+  background-color: #43a047;
+}
+
+.music-card {
+  background: #e8f5e9;
+  padding: 15px 20px;
+  margin-top: 15px;
+  border-left: 6px solid #43a047;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.music-card strong {
+  font-size: 1.1em;
+  color: #2e7d32;
+}
+
+audio {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+}
