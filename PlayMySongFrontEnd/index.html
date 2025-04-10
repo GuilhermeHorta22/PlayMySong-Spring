@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>PlayMySongs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>PlayMySongs</h1>
+
+  <section>
+    <h2>Enviar música</h2>
+    <form id="uploadForm">
+      <input type="text" name="titulo" placeholder="Título" required>
+      <input type="text" name="artista" placeholder="Artista" required>
+      <select name="estilo" required>
+        <option value="">Selecione o estilo</option>
+        <option value="Pop">Pop</option>
+        <option value="Rock">Rock</option>
+        <option value="Sertanejo">Sertanejo</option>
+        <option value="MPB">MPB</option>
+        <option value="Eletrônica">Eletrônica</option>
+        <option value="Funk">Funk</option>
+        <option value="Forró">Forró</option>
+        <option value="Outro">Outro</option>
+      </select>
+      <input type="file" name="file" accept=".mp3" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Buscar músicas</h2>
+    <input type="text" id="searchInput" placeholder="Digite algo para buscar">
+    <button onclick="buscarMusicas()">Buscar</button>
+    <button onclick="listarMusicas()">Listar todas</button>
+    <div id="listaMusicas"></div>
+  </section>
+  
+  <script src="script.js"></script>
+</body>
+</html>
