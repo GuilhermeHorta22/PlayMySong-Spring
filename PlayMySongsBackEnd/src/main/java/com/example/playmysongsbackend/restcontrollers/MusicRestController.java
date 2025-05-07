@@ -83,30 +83,32 @@ public class MusicRestController {
 
     @CrossOrigin(origins = "*")
     @GetMapping("list-musics")
-    public ResponseEntity<Object> listMusics() {
+    public ResponseEntity<Object> listMusics()
+    {
         File files = new File(UPLOAD_FOLDER);
         List<Musica> musicaList = new ArrayList<>();
         String[] arquivos = files.list();
 
-        if (arquivos == null) {
+        if(arquivos == null)
             return ResponseEntity.badRequest().body(new Erro("Nenhum arquivo encontrado"));
-        }
 
-        for (String arq : arquivos) {
-            if (arq.toLowerCase().endsWith(".mp3")) {
+        for(String arq : arquivos)
+        {
+            if(arq.toLowerCase().endsWith(".mp3"))
+            {
                 String[] separarString = arq.replace(".mp3", "").split("_");
-                if (separarString.length == 3) {
+                if(separarString.length == 3)
+                {
                     String fileName = arq;
                     musicaList.add(new Musica(separarString[0], separarString[1], separarString[2], getHostStatic() + fileName));
                 }
             }
         }
 
-        if (musicaList.isEmpty()) {
+        if (musicaList.isEmpty())
             return ResponseEntity.badRequest().body(new Erro("Nenhuma música encontrada"));
-        } else {
+        else
             return ResponseEntity.ok(musicaList);
-        }
     }
 
     /* retorna a url da pasta static/uploads */
